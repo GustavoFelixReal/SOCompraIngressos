@@ -20,10 +20,11 @@ public class CompraController extends Thread {
 			try {
 				semaphore.acquire();
 				comprarIngresso();
-				semaphore.release();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} finally  {
+				semaphore.release();
 			}
 		}
 	}
