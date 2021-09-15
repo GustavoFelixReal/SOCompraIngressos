@@ -21,7 +21,6 @@ public class CompraController extends Thread {
 				semaphore.acquire();
 				comprarIngresso();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} finally  {
 				semaphore.release();
