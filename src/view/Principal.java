@@ -13,8 +13,6 @@ public class Principal {
 			CompraController compraController = new CompraController(idComprador, semaphore);
 			compraController.start();
 		}
-		
-
 	}
 
 }
